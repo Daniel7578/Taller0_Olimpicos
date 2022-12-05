@@ -37,7 +37,7 @@ public class ConsolaOlimpicos
 			try
 			{
 				mostrarMenu();
-				int opcion_seleccionada = Integer.parseInt(input("Por favor seleccione una opción"));
+				int opcion_seleccionada = Integer.parseInt(input("Por favor seleccione más de una una opción"));
 				if (opcion_seleccionada == 1)
 					ejecutarCargarAtletas();
 				else if (opcion_seleccionada == 2 && calculadora != null)
@@ -104,7 +104,7 @@ public class ConsolaOlimpicos
 		System.out.println("10. Consultar el atleta todoterreno");
 		System.out.println("11. Consultar los medallistas por país y género");
 		System.out.println("12. Consultar el porcentaje de atletas que son medallistas");
-		System.out.println("13. Consultar pa�s de atleta");
+		System.out.println("13. Consultar pa�s de atleta");
 		System.out.println("14. Salir de la aplicación\n");
 	}
 
@@ -115,7 +115,7 @@ public class ConsolaOlimpicos
 	{
 		String nombre = input("Por favor ingrese el nombre de un atleta");
 		String nombrePais = calculadora.PaisArtista(nombre);
-		System.out.println("El pa�s del atleta indicado es " + nombrePais );
+		System.out.println("El pa�s del atleta indicado es " + nombrePais );
 	}
 	private void ejecutarPorcentajeMedallistas()
 	{
